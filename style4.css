@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pupheader {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color:maroon;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    padding: 5px 10px; /* Optional: Add padding for better appearance */
+}
+
+
+
+.puheader {
+    position: absolute;
+    top: 10%;
+    left: 50%; /* Set left to 50% to center horizontally */
+    transform: translateX(-50%); /* Use transform to adjust the centering */
+    color: white;
+    font-family: 'Times New Roman', serif; /* Use font-family instead of font-style */
+    background-color: maroon; /* Replace with the desired background color */
+    padding: 5px 10px; /* Optional: Add padding for better appearance */
+    font-size: 15px;
+}
+
+
+ul {
+    margin: 90px auto; /* Adjust the margin-top and margin-right as needed */
+    padding: 0;
+    list-style-type: none;
+    text-align: center; /* Center the text within the ul */
+}
+
+
+ul li
+{
+	display: inline-block;
+}
+
+ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.5s ease;
+
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+	color: #000;
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); /* Adjust the last value (0.9) for the desired opacity */
+}
+
+
+body {
+    background-image: url('puplagoon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+header a
+{
+    padding: 0 10px;
+    position: relative;
+    top: 8%;
+    left: 100;
+}
+
+
+header a:after {
+    content: "";
+    position: absolute;
+    background-color: maroon;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+header a:hover:after {
+    width: 100%;
+}
+
+
+header .logo {
+    position: relative;
+    max-width: 50px; 
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2
+{
+    color: #333;
+    font-size:  2em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span
+{
+    color: maroon;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p
+{
+    color: #333;
+}
+
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: maroon;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox
+{
+    width: 800px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+    background-position: bottom;
+    
+}
+
+.content .imgBox img
+{
+    max-width: 340px;
+ 
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    clip-path: circle(600px at right 800px);
+}
+
+span{
+    color: #40ff;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5em;
+}

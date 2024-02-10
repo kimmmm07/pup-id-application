@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APPLICATION FOR NEW/REPLACEMENT OF ID</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <div class="bg">
+    </div>
+
+    <style>
+        .logo{
+            width: 100%;
+        }
+
+        .color{
+            color: #daa625;
+        }
+
+        body{
+            overflow: hidden;
+            background-image: url("puplagoon.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80vh;
+            background-position: center;
+        }
+        
+        .checkbox{
+            top: auto;
+            left: 30%;
+            transform: scale(1.5);
+        }
+
+        .input{
+            font-weight: bold;
+            width: 600px;
+            background: transparent;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 6px;
+        }
+
+        .size{
+            width: 200px;
+            background: transparent;
+            border-radius: 10px;
+            border-color: black;
+            margin: 2px;
+            padding: 6px;
+        }
+
+        .gender{
+            width: 615px;
+            background: transparent;
+            border-radius: 10px;
+            border-color: black;
+            margin: 2px;
+            padding: 6px;
+            color: black;
+            font-family: Arimo;
+            font-size: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        
+        <div class="main">
+            <br><br>
+            <div class="logo">
+                <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                <a href="https://www.pup.edu.ph/"><img src="puplogo.png"></a>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>APPLICATION FOR NEW / REPLACEMENT OF ID</h1>
+        </div>
+
+        <form name="submit-to-google-sheet">
+            <div class="content-container">
+                <tr>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Transferee" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Transferee</label></td>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="LHS" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;LHS</label></td>
+                </tr>
+                
+                <tr>
+                    <br><br>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Late Filling" value="checkboxValue"></td>
+                    <td><label for="checkbox1">&emsp;Late Filling</label></td>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Undergrad" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Undergrad</label></td>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Old ID" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Old ID</label></td>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="College of Law" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;College of Law</label></td>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Shiftee" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Shiftee</label></td>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Graduate School" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Graduate School</label></td>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Damaged" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Damaged</label></td>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Open University" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Open University</label></td>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Correction of Entry" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Correction of Entry</label></td>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td><input type="checkbox" class="checkbox" id="checkbox" name="Institute of Technology" value="checkboxValue"></td>
+                    <td><label for="checkbox">&emsp;Institute of Technology</label></td>
+                </tr>
+                
+                <br><br><br><br><br>
+                <div class="header2">
+                    <h2>ID INFORMATION</h2>
+                </div>
+
+                <tr>
+                    <br><br><br>
+                    <input class="input" type="" name="Student Number" autocomplete="off" placeholder=" Student Number (ex:2019-11111-MN-0)" required>
+                </tr>
+                
+                <tr>
+                    <br><br>
+                    <input class="input" type="text" name="First Name" autocomplete="off" placeholder=" First Name" required>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <input class="input" type="text" name="Middle Name" autocomplete="off" placeholder=" Middle Name">
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <input class="input" type="text" name="Last Name" autocomplete="off" placeholder=" Last Name" required>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <td><select id="" name="Gender" class="gender" required>
+                        <td><option value="">Gender</option> 
+                            <option value="Male">Male</option>
+                            <option value="Male">Female</option>
+                    </select> </td>
+
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <td><select id="" name="Birth Month" class="size" required>
+                        <td ><option value="">Birth Month</option> 
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                    </select> </td>
+                        
+                </tr>
+
+                <tr>
+                    <td><select name="Birth Day" class="size" required>
+                        <option value="">Birth Day</option>
+                        <script>
+                        for (var day = 1; day <= 31; day++) {
+                            document.write('<option value="' + day + '">' + day + '</option>');
+                        }
+                        </script>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td><select id="yearDropdown" name="Birth Year" class="size" required>
+                        <option value="">Birth Year</option>
+                    </select>
+                    
+                    <script>
+                        var dropdown = document.getElementById("yearDropdown");
+                        var currentYear = new Date().getFullYear();
+                    
+                        for (var year = 1970; year <= currentYear; year++) {
+                        var option = document.createElement("option");
+                        option.value = year;
+                        option.text = year;
+                        dropdown.appendChild(option);
+                        }
+                    </script></td>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <input class="input" type="text" name="College" autocomplete="off" placeholder=" College" required>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <input class="input" type="text" name="Course/Year/Section" autocomplete="off" placeholder=" Course/Year/Section" required>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <input class="input" type="text" name="Home Address" autocomplete="off" placeholder=" Home Address" required>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <input class="input" type="tel" name="Phone/Mobile Number" autocomplete="off" placeholder=" Phone/Mobile Number" required>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <input class="input" type="email" name="Email Address" autocomplete="off" placeholder=" Email Address" required>
+                </tr>
+
+                <br><br><br><br>
+                <div class="notify">
+                    <h3>IN CASE OF EMERGENCY, PLEASE NOTIFY</h3>
+                </div>
+                
+                <tr>
+                    <br><br>
+                    <input class="input" type="text" name="Complete Name" autocomplete="of" placeholder=" Complete Name" required>
+                </tr>
+                
+                <tr>
+                    <br><br>
+                    <input class="input" type="tel" name="Contact No" autocomplete="off" placeholder=" Contact No" required>
+                </tr>
+
+                <tr>
+                    <br><br>
+                    <input class="input" type="text" name="Address" autocomplete="off" placeholder=" Address" required>
+                </tr>
+            </div>
+
+            <div class="submitbutton">
+                <a><input class="btn" type="submit" value="SUBMIT" name="submit"></a>
+            </div>
+            <span id ="msg">q</span>
+        </form>
+
+        <div class="terms">
+            <footer>By using this service, you understood and agree to the PUP Online Services 
+                <a href="https://www.pup.edu.ph/terms/"><span class="color">Terms of Use</span></a> and <a href="https://www.pup.edu.ph/privacy/"><span class="color">Privacy Statement</span></a>.</footer>  
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li class="active"><a href="landing page.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="https://www.pup.edu.ph/about/"><i class="fa fa-info-circle"></i>About</a></li>
+                <li><a href="https://www.pup.edu.ph/academic/"><i class="fa fa-graduation-cap"></i>Academic</a></li>
+                <li><a href="https://www.pup.edu.ph/students/"><i class="fas fa-user-graduate"></i>Student</a></li>
+                <li><a href="https://www.pup.edu.ph/researcher/"><i class="fa fa-flask"></i>Research</a></li>
+                <li><a href="https://www.pup.edu.ph/about/contactus"><i class="fas fa-phone-square"></i>Contact Us</a></li>
+            </ul>
+
+            <section>
+                <i class="fas fa-bars"></i>
+            </section>
+        </div>
+    </form>
+    </header>
+   
+    <script>
+        $(document).ready(function(){
+            $('i').click(function(){
+                $('ul').toggleClass('ul_show');
+                $('section').toggleClass('slide_image');
+            });
+            $('li').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+
+            $('.content-container').scrollTop($('.content-container')[0].scrollHeight);
+        });
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzWo81vDr3MPiiSdswQybhqr-uTgzojxPwcVjso6JXw8_5OrOxngOFt47OXvGY61YGWtQ/exec"
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Thanks for answering!');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML = "Your information has been saved!";
+            setTimeout(function () {
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+});
+
+    </script>
+
+</body>
+</html>
